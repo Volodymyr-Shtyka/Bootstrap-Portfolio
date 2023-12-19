@@ -6,10 +6,6 @@
     --h3-color: #465874;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
@@ -17,38 +13,117 @@ body {
     background-color: #ededf5;
 }
 
-/* Main Logo / Nav */
+img {
+    height: auto;
+    max-width: 100%;
+}
 
+/* Main Logo / Nav */
+header {
+    background-color: var(--primary-color);
+}
+
+h1.logo {
+    color: var(--primary-color);
+    background-color: var(--back-color);
+}
+
+.menu a,
+.contact-list li a {
+    color: var(--secondary-color);
+}
+
+.menu a::after,
+.contact-list li a::after {
+    background-color: var(--secondary-color);
+}
 
 /* Hero Banner */
+.hero {
+    background: linear-gradient(#0084ff57, #0084ff57);
+}
 
+.hero h2 {
+    color: var(--primary-color);
+    background-color: var(--back-color);
+}
 
 /* Main / Section */
+.section h3 {
+    color: var(--h3-color);
+}
 
+.section h3::after {
+    background-color: var(--h3-color);
+}
+
+.section-content p {
+    color: var(--primary-color);
+}
 
 /* About me */
 
-
 /* Portfolio Container */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
 
+.project {
+    flex: 1 1 50%;
+}
+
+.project-wrap {
+    position: relative;
+    padding: 20px;
+    margin: 10px;
+    height: 200px;
+    border: 2px solid var(--back-color);
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+}
+
+.project-content {
+    display: inline-block;
+    padding: 10px 10px 10px 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    color: var(--primary-color);
+    background-color: var(--back-color);
+}
+
+#work .card-deck .project-wrap {
+    height: 400px;
+    background-image: url(../images/module-1-challenge.png);
+    background-position: top;
+}
+
+.project:nth-child(2) .project-wrap {
+    background-image: url(../images/02-portfolio-3.jpg);
+}
+
+.project:nth-child(3) .project-wrap {
+    background-image: url(../images/02-portfolio-2.jpg);
+}
+
+.project:nth-child(4) .project-wrap {
+    background-image: url(../images/02-portfolio-4.jpg);
+}
+
+.project:nth-child(5) .project-wrap {
+    background-image: url(../images/02-run-buddy.jpg);
+}
 
 /* Contact */
-
-
-/* Media Queries*/
-@media screen and (max-width: 1024px) {
-
-
+.contact-list li a,
+.contact-list li a:visited {
+    color: var(--primary-color);
 }
 
-@media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 575px) {
-
-}
-
-@media screen and (max-width: 480px) {
-
+.contact-list li a::after {
+    background-color: var(--primary-color);
 }
