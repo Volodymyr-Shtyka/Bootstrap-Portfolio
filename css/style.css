@@ -1,9 +1,7 @@
 :root {
     --primary-color: #34373f;
-    --secondary-color: #98d6d6;
     --accent-color: #f5f5f5;
     --back-color: #91cacb;
-    --h3-color: #465874;
 }
 
 body {
@@ -22,13 +20,7 @@ body {
     color: var(--bs-nav-link-hover-color);
 }
 
-/* Hero Section */
-
-/* Sections */
-
-/* About me */
-
-/* Portfolio Container */
+/* Portfolio */
 .project-wrap {
     position: relative;
     padding: 20px;
@@ -36,30 +28,8 @@ body {
     height: 200px;
     border: 2px solid var(--back-color);
     background-size: cover;
-    background-position: center;
-    transition: 0.3s;
-}
-
-#project .card-deck .project-wrap {
-    height: 400px;
-    background-image: url(../images/module-1-challenge.png);
     background-position: top;
-}
-
-.project:nth-child(2) .project-wrap {
-    background-image: url(../images/02-portfolio-3.jpg);
-}
-
-.project:nth-child(3) .project-wrap {
-    background-image: url(../images/02-portfolio-2.jpg);
-}
-
-.project:nth-child(4) .project-wrap {
-    background-image: url(../images/02-portfolio-4.jpg);
-}
-
-.project:nth-child(5) .project-wrap {
-    background-image: url(../images/02-run-buddy.jpg);
+    transition: 0.3s;
 }
 
 .project-wrap:before {
@@ -78,9 +48,30 @@ body {
     opacity: 1;
 }
 
+.project-1 {
+    height: 400px;
+    background-image: url(../images/module-1-challenge.png);
+}
+
+.project-2 {
+    background-image: url(../images/web-developer-profile.png);
+}
+
+.project-3 {
+    background-image: url(../images/prework-study-guide.png);
+}
+
+.project-4 {
+    background-image: url(../images/Student_Bio.png);
+}
+
+.project-5 {
+    background-image: url(../images/zen-garden.png);
+}
+
 .project-content {
     display: inline-block;
-    padding: 10px 10px 0 15px;
+    padding: 10px 10px 10px 15px;
     position: absolute;
     bottom: 15px;
     left: 0;
