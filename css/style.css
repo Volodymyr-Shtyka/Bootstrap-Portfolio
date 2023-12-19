@@ -1,54 +1,36 @@
 :root {
     --primary-color: #34373f;
-    --secondary-color: #98d6d6;
     --accent-color: #f5f5f5;
     --back-color: #91cacb;
-    --h3-color: #465874;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
     font-weight: normal;
-    background-color: #ededf5;
+    color: var(--primary-color);
+    background-color: var(--accent-color);
 }
 
-/* Main Logo / Nav */
-
-
-/* Hero Banner */
-
-
-/* Main / Section */
-
-
-/* About me */
-
-
-/* Portfolio Container */
-
-
-/* Contact */
-
-
-/* Media Queries*/
-@media screen and (max-width: 1024px) {
-
-
+.color-section {
+    background: linear-gradient(#91cacb, #9dd1d7);
 }
 
-@media screen and (max-width: 768px) {
-
+a {
+    text-decoration: none;
 }
 
-@media screen and (max-width: 575px) {
-
+.navbar-brand {
+    color: var(--primary-color);
 }
 
-@media screen and (max-width: 480px) {
+.card img {
+    height: 300px;
+}
 
+.card .btn {
+    background-color: var(--back-color);
+}
+
+.card .btn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }

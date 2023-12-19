@@ -11,133 +11,215 @@
     <link rel="manifest" href="favicon/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="css/style.css?v=1.0">
-    <title>Volodymyr Shtyka // Web Developer</title>
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Volodymyr Shtyka - Bootstrap Portfolio</title>
 </head>
 
 <body>
-    <!-- main logo / nav -->
-    <header>
-        <h1 class="logo">
-            Volodymyr Shtyka
-        </h1>
-        <nav class="menu" aria-label="Main Navigation">
-            <a href="#about">About Me</a>
-            <a href="#project">Work</a>
-            <a href="#contact">Contact Me</a>
-            <a href="resume/Volodymyr_Shtyka_CV.pdf" target="_blank">Resume</a>
-        </nav>
-    </header>
 
-    <!-- hero banner -->
-    <section class="hero">
-        <div>
-            <h2>Coding Boot Brilliance</h2>
+<header>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Volodymyr Shtyka</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume/Volodymyr_Shtyka_CV.pdf" target="_blank">CV</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </section>
+    </nav>
+</header>
 
-    <main class="page-wrapper">
-        <!-- about me -->
-        <section id="about" class="about-section section">
-            <div class="section-title">
-                <h3>About Me</h3>
-            </div>
-            <div class="section-content">
-                <img class="avatar" src="images/avatar.jpeg" alt="Volodymyr Shtyka">
-                <p>I am a full stack web developer of sites and desktop applications.<br>
-                    I have more than 5 years experience in this field and more than 50 successfully completed orders of various
-                    levels of complexity.</p>
-                <p>My main activity is the programming and development of sites, as well as the integration of external
-                    services and the development of their own api to work with them. When programming I prefer to use PHP
-                    and Javascript.<br>
-                    I am constantly expanding my knowledge and skills through specialized online courses and self-study.<br>
-                    All this allows me to take on projects of any complexity and get high results.</p>
-            </div>
-        </section>
-        <!-- portfolio container -->
-        <section id="project" class="project-section section">
-            <div class="section-title">
-                <h3>Work</h3>
-            </div>
-            <div class="project-list">
-                <a class="project" href="https://volodymyr-shtyka.github.io/module-1-challenge/">
-                    <div class="project-wrap">
-                        <div class="project-content">
-                            <div class="project-title">
-                                Horiseon
-                            </div>
-                            <p class="project-descr">
-                                HTML/ CSS
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a class="project" href="project.html">
-                    <div class="project-wrap">
-                        <div class="project-content">
-                            <div class="project-title">
-                                LED Wall
-                            </div>
-                            <p class="project-descr">
-                                Node
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a class="project" href="project.html">
-                    <div class="project-wrap">
-                        <div class="project-content">
-                            <div class="project-title">
-                                Calculator
-                            </div>
-                            <p class="project-descr">
-                                React/ JS/ CSS
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a class="project" href="project.html">
-                    <div class="project-wrap">
-                        <div class="project-content">
-                            <div class="project-title">
-                                Pasterl Puzzels
-                            </div>
-                            <p class="project-descr">
-                                Mern Stack
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a class="project" href="project.html">
-                    <div class="project-wrap">
-                        <div class="project-content">
-                            <div class="project-title">
-                                Run Buddy
-                            </div>
-                            <p class="project-descr">
-                                HTML/ CSS
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </section>
-    </main>
+<!-- Hero Section -->
+<section id="hero" class="color-section jumbotron text-center pt-5 pb-5">
+    <img src="images/avatar.jpeg" alt="Volodymyr Shtyka" class="rounded-circle">
+    <h1 class="display-4">Volodymyr Shtyka</h1>
+    <div class="lead">
+        <p class="mb-1 ">I am a PHP web developer of sites and desktop applications.</p>
+        <p class="mb-1">I have more then 5 years experience in this field and more than 50 successfully completed orders
+            of various levels of complexity.</p>
+        <h3 class="pt-3 mb-0">Let's start scrolling and learn more about me.</h3>
+    </div>
+</section>
 
-    <!-- contact -->
-    <footer id="contact" class="section">
-        <div class="section-title">
-            <h3>Contact Me</h3>
+<!-- Projects Section -->
+<section id="project" class="container pt-5 mb-5">
+    <h2 class="text-center mb-4">Projects</h2>
+    <!-- Bootstrap Cards -->
+    <div class="row">
+        <div class="col-md-12 mb-3">
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/module-1-challenge.png" class="card-img-top" alt="Horiseon">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Horiseon</h5>
+                    <p class="card-text">HTML / CSS</p>
+                    <a href="https://volodymyr-shtyka.github.io/module-1-challenge" class="btn">
+                        Go to website
+                    </a>
+                </div>
+            </div>
         </div>
-        <ul class="contact-list">
-            <li><a href="tel:+447856259087">+44 (785) 625-90-87</a></li>
-            <li><a href="mailto:vladimirshtyka@gmail.com">vladimirshtyka@gmail.com</a></li>
-            <li><a href="https://github.com/Volodymyr-Shtyka" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/vshtyka" target="_blank">LinkedIn</a></li>
-            <li><a href="#">Twitter</a></li>
-        </ul>
-    </footer>
+    </div>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/web-developer-profile.png" class="card-img-top" alt="Web Developer Portfolio">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Web Developer Portfolio</h5>
+                    <p class="card-text">HTML / CSS</p>
+                    <a href="https://volodymyr-shtyka.github.io/web-developer-profile" class="btn">
+                        Go to website
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/prework-study-guide.png" class="card-img-top" alt="Prework study guide">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Prework study guide</h5>
+                    <p class="card-text">HTML / CSS</p>
+                    <a href="https://volodymyr-shtyka.github.io/prework-study-guide" class="btn">
+                        Go to website
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/Student_Bio.png" class="card-img-top" alt="Student Bio">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Student Bio</h5>
+                    <p class="card-text">HTML / CSS</p>
+                    <a href="https://volodymyr-shtyka.github.io/Student-Bio" class="btn">
+                        Go to website
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/zen-garden.png" class="card-img-top" alt="CSS Zen Garden">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CSS Zen Garden</h5>
+                    <p class="card-text">HTML / CSS</p>
+                    <a href="https://volodymyr-shtyka.github.io/zen-garden" class="btn">
+                        Go to website
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Skills Section -->
+<section id="skills" class="color-section pt-5 pb-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="row justify-content-center">
+                <ul class="list-group col-6 text-center">
+                    <li class="list-group-item list-group-item-action mb-2">HTML, CSS</li>
+                    <li class="list-group-item list-group-item-action mb-2">Javascript</li>
+                    <li class="list-group-item list-group-item-action mb-2">Git, GitHub</li>
+                    <li class="list-group-item list-group-item-action mb-2">UX</li>
+                    <li class="list-group-item list-group-item-action mb-2">React.js</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About/Contact Section -->
+<section id="about" class="container pt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>About Me</h2>
+            <p>I am a PHP web developer of sites and desktop applications.<br>
+                I have more than 5 years experience in this field and more than 50 successfully completed orders of
+                various levels of complexity.</p>
+            <p>My main activity is the programming and development of sites, as well as the integration of external
+                services and the development of their own api to work with them. When programming I prefer to use PHP
+                and Javascript.<br>
+                I am constantly expanding my knowledge and skills through specialized online courses and self-study.</p>
+            <p>All this allows me to take on projects of any complexity and get high results.</p>
+        </div>
+        <div class="col-md-6">
+            <h2>Contact</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a class="icon-link icon-link-hover" href="tel:+447856259087">
+                        +44 (785) 625-90-87
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="icon-link icon-link-hover" href="mailto:vladimirshtyka@gmail.com">
+                        vladimirshtyka@gmail.com
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="icon-link icon-link-hover" href="https://github.com/Volodymyr-Shtyka" target="_blank">
+                        GitHub
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="icon-link icon-link-hover" href="https://www.linkedin.com/in/vshtyka" target="_blank">
+                        LinkedIn
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="color-section mt-5 pt-4 pb-1">
+    <div class="container text-center">
+        <p>2023 Volodymyr Shtyka. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and Popper.js scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
