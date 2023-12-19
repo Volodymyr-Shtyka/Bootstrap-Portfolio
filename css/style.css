@@ -15,16 +15,22 @@ body {
     background: linear-gradient(#91cacb, #9dd1d7);
 }
 
-/* Header/ Navigation Bar */
+a {
+    text-decoration: none;
+}
+
 .navbar-brand {
     color: var(--primary-color);
 }
 
-/* Projects */
 .card img {
     height: 300px;
 }
 
 .card .btn {
     background-color: var(--back-color);
+}
+
+.card .btn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
